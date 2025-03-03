@@ -1,0 +1,324 @@
+/* Header Start */
+
+header {
+  padding: 0 20px;
+  background-image: url("../images/event-package/pc-header.jpg");
+  background-size: contain;
+}
+
+header.dark {
+  background-image: none;
+  background-color: #121212;
+}
+
+/* @media (max-width: 560px) {
+  header {
+    padding: 0 20px;
+  }
+} */
+
+@media (max-width: 1020px) {
+  header {
+    padding: 20px;
+  }
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  width: 85%;
+}
+
+@media (max-width: 770px) {
+  header .container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 560px) {
+  header .container {
+    width: 100%;
+  }
+}
+
+header .container .logo {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 150px;
+}
+
+@media (max-width: 630px) {
+  header .container .logo {
+    width: 100px;
+  }
+}
+
+@media (max-width: 560px) {
+  header .container .logo {
+    width: 70px;
+  }
+}
+
+header .container .logo .img-logo {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 700px) {
+  header .container .logo .img-logo {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 630px) {
+  header .container .logo .img-logo {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  header .container .logo .img-logo {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+header .container .logo .name {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--mainColor);
+  user-select: none;
+}
+
+header .container .logo .name.dark {
+  color: white;
+}
+
+@media (max-width: 700px) {
+  header .container .logo .name {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 630px) {
+  header .container .logo .name {
+    font-size: 15px;
+  }
+}
+
+header .container .headline {
+  position: relative;
+}
+
+header .container .headline p {
+  font-size: 30px;
+  font-weight: 600;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: var(--mainColor);
+}
+
+header .container .headline p.dark {
+  color: white;
+}
+
+header .container .headline .back {
+  width: 80px;
+  height: 31px;
+  background-color: #497b95;
+  position: absolute;
+  top: 35px;
+  left: 300px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 1020px) {
+  header .container .headline .back {
+    width: 80px;
+    height: 31px;
+    background-color: #497b95;
+    position: absolute;
+    top: -16px;
+    left: -29px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+}
+
+header .container .headline span .circle {
+  user-select: none;
+  display: inline-block;
+  color: white;
+  background-color: white;
+  border-radius: 50%;
+  margin-top: 3.5px;
+  margin-left: 5px;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  transition: 0.3s margin-left, 0.3s background-color, 0.3s color;
+}
+
+header .container .headline span .circle.dark {
+  margin-left: 50px;
+  background-color: var(--thirdColor);
+  color: var(--thirdColor);
+}
+
+@media (min-width: 1020px) {
+  header .container .headline span .circle {
+    margin-top: 2.5px;
+  }
+}
+
+@media (max-width: 1020px) {
+  header .container .headline p {
+    display: none;
+  }
+}
+
+/* @media (max-width: 700px) {
+  header .container .headline p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 570px)
+{
+  header .container .headline p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  header .container .headline p {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 530px) {
+  header .container .headline p {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  header .container .headline p {
+    font-size: 17.5px;
+    margin-left: 35px;
+  }
+} */
+
+/* Burger Icon start */
+
+header .container .links .icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 40px;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+header .container .links .icon span {
+  height: 4px;
+  margin-bottom: 5px;
+  background-color: var(--mainColor);
+}
+
+header .container .links .icon span.dark {
+  background-color: white;
+}
+
+@media (max-width: 570px) {
+  header .container .links .icon span {
+    height: 3px;
+  }
+}
+
+header .container .links .icon span:first-child {
+  width: 100%;
+}
+
+header .container .links .icon span:nth-child(2) {
+  width: 60%;
+  transition-property: width;
+  transition-duration: 0.3s;
+}
+
+header .container .links .icon span:last-child {
+  width: 100%;
+}
+
+header .container .links .icon:hover span:nth-child(2) {
+  width: 100%;
+}
+
+/* Burger Icon start */
+
+header .container .links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: var(--mainColor);
+  position: absolute;
+  min-width: 200px;
+  right: -14px;
+  top: calc(100% + 8px);
+  border-radius: 6px;
+  z-index: 1;
+  padding: 20px;
+  display: none;
+}
+
+header .container .links ul.clicked {
+  display: block;
+}
+
+header .container .links ul::after {
+  content: "";
+  border: 25px solid;
+  border-color: transparent transparent var(--mainColor) transparent;
+  position: absolute;
+  top: -47px;
+  right: 10px;
+}
+
+header .container .links ul li {
+  text-align: center;
+}
+
+header .container .links ul li:first-child {
+  margin-bottom: 30px;
+}
+
+header .container .links ul li:first-child::after {
+  content: "";
+  border: 2px solid;
+  border-color: transparent transparent var(--secondColor) transparent;
+  width: 98%;
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+
+header .container .links ul li a {
+  color: var(--secondColor);
+  text-decoration: none;
+  opacity: 0.7;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+}
+
+header .container .links ul li a:hover {
+  opacity: 1;
+}
+
+/* Header End */

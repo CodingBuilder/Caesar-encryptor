@@ -1,0 +1,127 @@
+/* Footer Start */
+
+footer {
+  padding-bottom: 40px;
+  background-color: var(--mainColor);
+  height: 17vh;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+footer .container {
+  display: grid;
+  justify-content: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  column-gap: 50px;
+}
+
+@media (max-width: 500px) {
+  footer .container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 445px) {
+  footer .container {
+    padding-top: 5px;
+  }
+}
+
+@media (max-width: 380px) {
+  footer .container {
+    padding-top: 13px;
+  }
+}
+
+footer .container .icons i {
+  color: var(--secondColor);
+  font-size: 40px;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+footer .container .icons i:hover {
+  color: var(--thirdColor);
+}
+
+@media (max-width: 450px) {
+  footer .container .icons i {
+    font-size: 35px;
+  }    
+}
+
+footer .container .icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+footer .container p {
+  color: var(--secondColor);
+  text-align: center;
+}
+
+.copyright {
+  padding: 20px;
+  padding-bottom: 0;
+  background-color: var(--thirdColor);
+}
+
+.copyright .container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright .container p {
+  color: var(--secondColor);
+  font-size: 30px;
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .copyright .container p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 515px) {
+  .copyright .container p {
+    font-size: 20px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 425px) {
+  .copyright .container p {
+    font-size: 20px;
+    width: 297px;
+  }
+}
+
+.copyright .container span:first-child {
+  color: #497b95;
+  font-weight: bold;
+}
+
+.copyright .version {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.copyright .version p {
+  color: var(--secondColor);
+  opacity: 0.6;
+  user-select: none;
+  z-index: 2;
+}
+
+/* Footer End */

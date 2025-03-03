@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
     <!-- Web Title -->
     <title>Caesar encryptor</title>
   </head>
   <body>
+    <span class="up"><i class="fa-solid fa-arrow-up"></i></span>
     <!-- Header Start -->
-      <header>
+      <header class="header">
         <div class="container">
           <div class="logo">
             <img src="images/logo.png" class="img-logo">
             <span class="name">Caesar Encryptor</span>
           </div>
           <div class="headline">
-            <p class="architects-daughter-regular">Best encryption way</p>
+            <p>Best encryption way</p>
+            <span class="back"><span class="circle light"></span></span>
           </div>
           <div class="links">
             <span class="icon" id="icon">
@@ -28,8 +35,8 @@
               <span></span>
             </span>
             <ul id="list">
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#encryptor">Encryption tool</a></li>
+              <li><a href="#contact">Encryption tool</a></li>
+              <li><a href="#enc-tool">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -46,15 +53,16 @@
     <!-- Landing End -->
 
     <!-- Main start -->
-      <main>
+      <main class="main">
+        <p id="enc-tool">Encryption Tool</p>
         <div class="container" id="encryptor">
           <div class="col1">
             <div class="input">
-              <textarea name="input-text" id="inputText" class="input-text" placeholder="Your Text Here!"></textarea>
+              <textarea name="input-text" class="input-text" dir="rtl" spellcheck="false" placeholder="Your Text Here!"></textarea>
               <div class="block">
                 <div class="line1"></div>
               </div>
-              <textarea name="key" id="key" class="key" placeholder="Encryption key"></textarea>
+              <textarea name="key" class="key" placeholder="key"></textarea>
             </div>
           </div>
           <div class="col2">
@@ -65,7 +73,7 @@
           </div>
           <div class="col3">
             <div class="output">
-              <textarea name="output-text" id="outputText" class="output-text" placeholder="Result Text" readonly></textarea>
+              <textarea name="output-text" class="output-text" spellcheck="false" dir="rtl" placeholder="Result Text" readonly></textarea>
             </div>
           </div>
         </div>
@@ -78,7 +86,7 @@
           <div class="icons" >
             <a href="https://www.facebook.com/share/1FG5bJ9KJg/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             <a href="mailto:ahmed.shalaby1243@gmail.com" target="_blank"><i class="fa-brands fa-google"></i></a>
-            <a href="https://github.com/CodeingBuilder" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/CodingBuilder" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.instagram.com/ahmedibrahim1568?igsh=MTRudGcxejRuZTk5Mw==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
           </div>
           <div class="descreption">
@@ -91,13 +99,14 @@
     <!-- Copyright start -->
       <div class="copyright">
         <div class="container">
-          <p>&copy; Made with 🖤 by <span>Spark Minds team</span> all rights reserved</p>
+          <p>Made with 🖤 by <span>Spark Minds Team</span>. All rights reserved &copy; <span></span></p>
         </div>
         <div class="version">
-          <p>Version: 1.0</p>
+          <p>Version 1.1 - Ramadan Update</p>
         </div>
       </div>
     <!-- Copyright end -->
-     <script src = "javascript/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src = "javascript/main.js"></script>
   </body>
 </html>
